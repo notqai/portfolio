@@ -61,15 +61,7 @@ nav .container {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.nav-logo {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-  text-decoration: none;
-  letter-spacing: 0.02em;
+  justify-content: center;
 }
 
 .nav-links {
