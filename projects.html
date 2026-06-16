@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Qai</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">Qai</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="divider"></div>
+      <div class="cards-grid">
+
+        <div class="card">
+          <h3 class="card-title">Automated Trading System</h3>
+          <p class="card-desc">Final year project — a four-layer event-driven pipeline for automated XAUUSD trading.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pine Script v6</span>
+            <span class="tag">Flask</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">MT5</span>
+            <span class="tag">MQL5</span>
+          </div>
+          <ul class="card-bullets">
+            <li>TradingView signal engine → ngrok tunnel → Flask ML relay → PineConnector → MT5 EA</li>
+            <li>RF + SGD ensemble classifier with 13-feature extraction and dynamic win threshold</li>
+            <li>MTL_ResultReporter EA provides live trade feedback loop to relay</li>
+          </ul>
+          <span class="badge-private">Private — FYP submission</span>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">MTL Zone Indicator</h3>
+          <p class="card-desc">Custom Pine Script v6 indicator for multi-source zone detection on TradingView.</p>
+          <div class="tags">
+            <span class="tag">Pine Script v6</span>
+            <span class="tag">TradingView</span>
+            <span class="tag">MQL5</span>
+            <span class="tag">Webhooks</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Detects QZones, Order Blocks, Fair Value Gaps, Base Zones, and Market Zones</li>
+            <li>Confluence scoring, sideways/ranging detection, breakout labelling</li>
+            <li>MT5 alert bridge via webhook → Flask relay → PineConnector</li>
+          </ul>
+          <span class="badge-private">Private</span>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">IoT Telegram Bot</h3>
+          <p class="card-desc">ESP32-based sensor node with a Telegram bot interface for remote monitoring and control.</p>
+          <div class="tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">Python</span>
+            <span class="tag">ThingSpeak</span>
+            <span class="tag">Telegram API</span>
+            <span class="tag">ngrok</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Reads sensor data and publishes to ThingSpeak for live charting</li>
+            <li>Telegram bot receives commands to toggle relay and query sensor values</li>
+            <li>ngrok tunnel exposes local Flask endpoint for webhook delivery</li>
+          </ul>
+          <a href="#" class="card-link">GitHub →</a>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">AWS Cloud Infrastructure</h3>
+          <p class="card-desc">Designed and deployed a multi-tier cloud architecture on AWS.</p>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">EC2</span>
+            <span class="tag">VPC</span>
+            <span class="tag">RDS</span>
+            <span class="tag">IAM</span>
+            <span class="tag">EBS</span>
+          </div>
+          <ul class="card-bullets">
+            <li>Custom VPC with public and private subnets, route tables, and security groups</li>
+            <li>EC2 instances with EBS volumes, load balancer configuration</li>
+            <li>RDS instance in private subnet, IAM roles for least-privilege access</li>
+          </ul>
+          <span class="badge-private">Academic project</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
