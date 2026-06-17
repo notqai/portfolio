@@ -120,27 +120,18 @@ nav {
 
 nav .container {
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
 }
-
-.nav-brand {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  text-decoration: none;
-}
-.nav-brand .dot { color: var(--accent); }
 
 .nav-links {
   display: flex;
   gap: 28px;
   list-style: none;
   align-items: center;
+  justify-self: center;
 }
 
 .nav-links a {
@@ -179,6 +170,7 @@ nav .container {
   place-items: center;
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.3s var(--ease);
   flex-shrink: 0;
+  justify-self: end;
 }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); transform: rotate(-15deg); }
 .theme-toggle svg { width: 16px; height: 16px; }
@@ -580,7 +572,6 @@ footer {
 @media (max-width: 560px) {
   .container { padding: 0 20px; }
   .nav-links { gap: 16px; }
-  .nav-brand { display: none; }
   .card { padding: 24px; }
   .hero-actions { width: 100%; }
   .btn { flex: 1; justify-content: center; }
